@@ -1,0 +1,18 @@
+---
+title: "Phrynosoma cornutum"
+output: html_document
+---
+
+<img src="https://c2.staticflickr.com/6/5343/9063963730_a5185db6ec_b.jpg" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;The Texas horned lizard, *Phrynosoma cornutum*, is one of the horned lizards found in arid habitats like prairies, dunes, and deserts in the southern-central United States and Mexico.  
+&emsp;Lizards in such arid environments experience a high risk of overheating, dehydration, and increased temperature-related maintenance cost, which restricts their activity time to a small window. Texas horned lizards thus have a foraging strategy where they consume a large volume of prey in a very short period, pack their huge guts rapidly and retreat to cooler sites (Lara-Reséndiz et al., 2015). *P. cornutum* is partially crepuscular and even facultatively nocturnal to increase activity time although their eyes are not well adapted to darkness (Williams, 1959; Lara-Reséndiz et al., 2015).  
+&emsp;In general, organisms from desert environments are highly impacted by global warming due to the slower pace of adaptive change in body temperature. *P. cornutum* is not the most impacted, but it is not an exception. If climate change progresses as predicted, this species will be driven locally extinct in the Chihuahuan Desert at 5.6% of sites by 2050 and 17.6% by 2080 (Lara-Reséndiz et al., 2015).
+
+**References**  
+Lara-Reséndiz, R. A., Gadsden, H., Rosen, P. C., Sinervo, B., & Méndez-De la Cruz, F. R. (2015). Thermoregulation of two sympatric species of horned lizards in the Chihuahuan Desert and their local extinction risk. Journal of Thermal Biology, 48, 1-10.  
+Williams, K. (1959). Nocturnal Activity of Some Species of Horned Lizards, Genus Phrynosoma. Herpetologica, 15(1), 43.

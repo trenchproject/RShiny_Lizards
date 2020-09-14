@@ -1,0 +1,20 @@
+---
+title: "Elgaria multicarinata"
+output: html_document
+---
+
+<img src="https://i.pinimg.com/originals/40/14/88/40148816b498f095d7e2ad9ca7193658.jpg" 
+width = 450 
+class="center"
+align="right" />
+**Description**  
+&emsp;*Elgaria multicarinata*, the southern alligator lizard, is distributed in the western United States, from Washington to California. This species of lizard is a eurytherm, which means that they have a highly variable body temperature during activity as opposed to stenotherms which can only stay active at a narrow temperature range (Kingsbury, 1994).  
+&emsp;Similar to stenotherms, *E. multicarinata* basks with dorso-ventral flattening when it's cool and sunny, and move deeper into vegetation when the temperature increases. However, unlike stenotherms, southern alligator lizards can stay active in environments where the temperature is lower than their preferred temperature range. They maintain their body temperature in their preferred range when possible, but when it is not, they continue to be active anyway and accept lower body temperatures (Kingsbury, 1994). *E. multicarinata* is therefore a "facultative thermoregulator".  
+&emsp;One of the huge benefits of eurytherms is that they can be active at a wider temperature range, even in overcast mornings in spring, when it is still too cold for stenotherms. Similarly, they can occupy microhabitats that other species are not capable of, which accounts for the alligator lizards' preference for heavy brush where basking sites are limited. Since such environments are costly for species needing thermoregulation, this provides the alligator lizards access to new food sources with reduced interspecific competitions (Kingsbury, 1994). Costs of reduced locomotory or digestive capacity as eurytherms are compensated for by making their diet predominently slow-moving prey and relying on crypsis to avoid predation (Kingsbury, 1994).
+
+**Reference**  
+Kingsbury, B. A. (1994). Thermal constraints and eurythermy in the lizard Elgaria multicarinata. Herpetologica, 266-273.
+
+<!-- They have a large head and a strong jaw, which enable them to bite with a lot of power. -->
+<!-- They hibernate during colder months, mating occurs around April and May, and eggs hatch through summer and early fall.   -->
+<!-- This species is long-living and known to live up to 15 years.   -->

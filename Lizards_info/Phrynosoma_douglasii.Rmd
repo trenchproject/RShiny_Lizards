@@ -1,0 +1,21 @@
+---
+title: "Phrynosoma douglasii"
+output: html_document
+---
+
+<img src="https://calphotos.berkeley.edu/imgs/512x768/0000_0000/0210/2239.jpeg"
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;The short-horned lizard, *Phrynosoma douglasii*, is a species of lizard that ranges from southwestern Canada to the northwestern United States.  
+&emsp;This species of lizard is well adapted to high altitudes because of their notably low critical thermal minimum. *P. douglasii* is capable of movement at body temperatures nearly as low as those tolerated by a species living at 4575 m (Prieto & Whitford, 1971). They also don't use rodent burrows or burrowing under loose soil at night to avoid the cold (Guyer & Linder, 1985). This high tolerance enables them to be active at a wide range of temperatures. Lizards of this genus can be active earlier and later in the day, and thus over a longer time than most other sympatric species of lizards. Therefore, their body temperature variability is greater than that of any other North American iguanid (Guyer & Linder, 1985).  
+&emsp;On the other hand, their critical thermal maximum is relatively low, which makes them vulnerable to the continuous increase in temperature that is likely to happen.
+
+**References**  
+Guyer, C., & Linder, A. D. (1985). Thermal ecology and activity patterns of the short-horned lizard (Phrynosoma douglassi) and the sagebrush lizard (Sceloporus graciosus) in southeastern Idaho. The Great Basin Naturalist, 607-614.  
+Prieto, A., & Whitford, W. (1971). Physiological Responses to Temperature in the Horned Lizards, Phrynosoma cornutum and Phrynosoma douglassii. Copeia, 1971(3), 498-504.
+<br>
+<br>
+<!-- They expedite their morning rise in cloacal temperature by placing themselves in the warmest and fastest heating microhabitat (Prieto & Whitford, 1971).   -->

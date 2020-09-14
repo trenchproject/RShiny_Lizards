@@ -1,0 +1,23 @@
+---
+title: "Anolis semilineatus"
+output: html_document
+---
+
+<img src="http://www.saumfinger.de/asemilineatuspics/3semilineatus.jpg" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;*Anolis semilineatus* is restricted to relatively mesic grasslands and riparian habitats from sea level to approximately 1200 m elevation.  
+&emsp;One of the major disadvantages of grassland habitats is that grasses and shrubs cast long shadows in the morning and evening when lizards typically bask (Hertz, 1979). The lizards are left with few available basking sites except on the upper tips of plants where the risk of predation is high. Accordingly, this species has evolved to expend not so much energy and time on thermoregulatory activities but rather adopt a strategy of thermal passivity (Hertz, 1979). Additionally, the small size of the anoles inevitably contributes to a fast rate of radiant heating and cooling, which is an additional risk associated with thermoregulation.
+
+**Reference**  
+Hertz, P. E. (1979). Comparative thermal biology of sympatric grass anoles (Anolis semilineatus and A. olssoni) in lowland Hispaniola (Reptilia, Lacertilia, Iguanidae). Journal of Herpetology, 329-333.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

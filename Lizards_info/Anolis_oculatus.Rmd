@@ -1,0 +1,20 @@
+---
+title: "Anolis oculatus"
+output: html_document
+---
+
+<p align='center'>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Anolis_oculatus_winstoni_%28male%29.jpg", width = 500>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src="A.oculatus.png", width = 500>
+</p>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Here, "5 cuban species" is the combination of the five Anoles other than *A.oculatus*.)
+
+
+**Description**  
+&emsp;The Dominican anole, *Anolis oculatus*, is an endemic species in Lesser Antillean island of Dominica. They are arboreal and spend most of their active period off the ground on tree trunks, rocks, or other elevated perches.  
+&emsp;As eurytherms, Dominican anoles can tolerate highly variable body temperatures during activity. The range of mean body temperature (MBT) is greater than any of the anoles of the Greater Antilles as shown in the figure above (Ruibal & Philibosian, 1970). Taking advantage of the capability to adapt to a variety of thermal conditions, *A. oculatus* occupies a broader ecological niche. They can be found from open agricultural areas where they perch on fence posts to the cool rain forests high in the mountains.
+
+
+**Reference**  
+Ruibal, R., & Philibosian, R. (1970). Eurythermy and niche expansion in lizards. Copeia, 645-653.

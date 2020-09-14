@@ -1,0 +1,17 @@
+---
+title: "Sceloporus woodi"
+output: html_document
+---
+
+<img src="http://bit.ly/1kb2k3m" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;The Florida scrub lizard, *Sceloporus woodi*, is endemic to the dry xeric environments in Florida, United States.  
+&emsp;They are found in the Ocala National Forest, occupying either longleaf pine habitats or sand pine scrub habitats. Longleaf habitats consist of a moderately dense forest with canopy. Lizards living in longleaf pine habitat chose among many arboreal perches. They are able to easily move between sunny and shady locations and select perch heights to thermoregulate. On the other hand, the sand pine habitat is largely open and receives direct sunlight, which elevates the operative temperatures of lizards in the habitat. Being restricted to the ground due to limited vegetation reduces thermoregulatory opportunities. As a consequence, lizards in this habitat reduce their activity time midday to maintain non-lethal body temperatures (Neel 2016). This increased thermoregulatory effort contributes to similar field body temperatures from the two sites (Neel, 2016).  
+&emsp;In both sites, *S. woodi* increases thermoregulatory effort when the environment is warmer than preferred but not when cooler. (Neel 2016). They can afford imprecision in thermoregulation when the environmental temperatures are cooler, but precise regulation is necessary at high temperatures. Ongoing global warming is likely to force *S. woodi* to maintain strict thermoregulation.
+
+**Reference**  
+Neel, L. K. (2016). The Effects of Thermal Opportunity and Habitat on Physiological Performance in Ecologically Distinct Populations of the Florida Scrub Lizard Sceloporus woodi.

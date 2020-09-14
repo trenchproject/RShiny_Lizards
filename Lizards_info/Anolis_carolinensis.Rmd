@@ -1,0 +1,30 @@
+---
+title: "Anolis carolinensis"
+output: html_document
+---
+
+<img src="https://i2.wp.com/www.anoleannals.org/wp-content/uploads/2013/06/DSC_0038-modified2.jpg" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;The green anole, *Anolis carolinensis*, is a species of lizard found in the southeastern United States. They are known as low bush lizards and are most commonly seen perched on a tree or bush less than 6 feet off the ground (Corn, 1971).  
+&emsp;The green anoles' mean preferred temperature is between 30 and 33 °C. They often bask under open sunlight on bushes and grass to maintain their body temperature. Laboratory experiments showed that this species' critical thermal maximum rises with increased ambient temperature to some extent (Corn, 1971). Meanwhile, wild populations of *A. carolinensis* in Texas showed a lower average critical thermal minimum — a higher cold tolerance — after an unusually cold winter (Campbell-Staton et al., 2017). The rapid adaptations to extreme events suggest potential flexibility of this species towards climate change.
+<!-- As seen in the picture, males have a pinkish dewlap that is displayed to show aggression or to attract a potential mate. Males are highly territorial and they usually only mate within their territorries. They are polygynous and breed every two weeks from April to August.   -->
+<!-- Both males and females reach sexual maturity in 8 to 9 months, and live up to 8 years.   -->
+
+<!-- Green anoles are traded as pets and are sold in many pet stores in the United States.   -->
+
+**References**  
+Campbell-Staton, S. C., Cheviron, Z. A., Rochette, N., Catchen, J., Losos, J. B., & Edwards, S. V. (2017). Winter storms drive rapid phenotypic, regulatory, and genomic shifts in the green anole lizard. Science, 357(6350), 495-498.  
+Corn, M. J. (1971). Upper thermal limits and thermal preferenda for three sympatric species of Anolis. Journal of Herpetology, 17-21.
+<!-- Lailvaux, S. P., & Irschick, D. J. (2007). Effects of temperature and sex on jump performance and biomechanics in the lizard Anolis carolinensis. Functional Ecology, 534-543. -->
+
+
+
+
+<br>
+<br>
+<br>
+<br>

@@ -1,0 +1,20 @@
+---
+title: "Sceloporus magister"
+output: html_document
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sceloporus_magister_Phoenix.jpg/1200px-Sceloporus_magister_Phoenix.jpg" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;*Sceloporus magister*, the desert spiny lizard, is widely distributed in western North America. They can be found in a variety of habitat types including rocky areas in canyons, foothills, and typical flatland deserts.  
+&emsp;*S. magister* is active over a narrower range of body temperatures than other lizards that occupy similar habitats due to their relatively low tolerance for high temperatures (Parker & Pianka, 1973). To maximize activity time, this species uses shallow rock crevices as retreat sites overnight to get full exposure to the early morning warm temperature (McGinnis & Falkenstein, 1971). This allows them to start their activity early before retreating to deep shade midday to avoid overheating. They don't normally move through a diverse thermal environment nor expend energy making long runs. This reduced metabolic heat gain also contributes to the narrow temperature range (Parker & Pianka, 1973).  
+
+**References**  
+McGinnis, S. M., & Falkenstein, M. (1971). Thermoregulatory behavior in three sympatric species of iguanid lizards. Copeia, 1971(3), 552-554.  
+Parker, W. S., & Pianka, E. R. (1973). Notes on the ecology of the iguanid lizard, Sceloporus magister. Herpetologica, 143-152.
+<br>
+<br>
+<br>

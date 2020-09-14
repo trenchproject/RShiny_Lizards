@@ -1,0 +1,21 @@
+---
+title: "Sceloporus occidentalis"
+output: html_document
+---
+
+<p align = "center">
+<img src="https://wildmacro.com/library/animals/western-fence-lizard-sceloporus-occidentalis-occidentalis-ANI0053.jpg" width = 450>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src="S.occidentalis.png" width = 450>
+</p>
+**Description**  
+&emsp;The western fence lizard, *Sceloporus occidentalis*, is a common lizard distributed in the western United States, anywhere from fenceposts, rocks, and logs to sides of buildings (Stebbins, 2003). These lizards are either semi-terrestrial or arboreal, and tend to choose rocks near trees under canopy for their primary habitat. As temperature increases and rocks heat up, fewer individuals stay on the rocks and more move to nearby trees as shown in the figure on the top right. Their habitat choice also enables them to escape up a nearby tree when faced with a danger or disturbance (Davis & Verbeek, 1972).
+
+<!-- Males have blue patches on the throat and sides of belly.    -->
+<!-- Eggs are laid April through July with clutch size of 3 to 17. They primarily prey on insects and spiders. -->
+
+**References**  
+Davis, J., & Verbeek, N. A. (1972). Habitat preferences and the distribution of Uta stansburiana and Sceloporus occidentalis in coastal California. Copeia, 643-649.  
+Sinervo, B., & Adolph, S. C. (1994). Growth plasticity and thermal opportunity in Sceloporus lizards. Ecology, 75(3), 776-790.  
+Stebbins, R. (2003). A field guide to western reptiles and amphibians (3rd ed., Peterson field guide series). Boston: Houghton Mifflin.
+

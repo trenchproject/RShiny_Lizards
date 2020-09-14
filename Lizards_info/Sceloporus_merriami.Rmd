@@ -1,0 +1,18 @@
+---
+title: "Sceloporus merriami"
+output: html_document
+---
+
+<img src="http://www.thehibbitts.net/troy/photo/lizards/s.merriami.tx.brewster.06.1a.jpg" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;The canyon lizard, *Sceloporus merriami*, is a rock-dwelling lizard whose distribution is limited to the Big Bend region of Texas in the United States, and northeastern Mexico.  
+&emsp;*S. merriami* is most active in the early morning and late afternoon (Grant, 1990). In the early morning, lizards perch in the sun, but their activity level drastically declines around 10 am when they retreat into deep caves and crevices to minimize exposure to the hot environment. In the evening when they reactivate, they perch almost exclusively in shady microhabitats.  
+&emsp;Laboratory experiments demonstrated that on average, sprint speeds declined by 25.7% and water loss rate increased by 37% when the body temperature increased by 4 °C from their optimal temperature (Grant, 1990; Huey & Dunham, 1987). Other data demonstrate that this change in temperature increases the resting metabolic rate of *S. merriami* by over 40%, which is a serious increase in energy burn.
+
+**References**  
+Grant, B. W. (1990). Trade‐offs in activity time and physiological performance for thermoregulating desert lizards, Sceloporus merriami. Ecology, 71(6), 2323-2333.  
+Huey, R. B., & Dunham, A. E. (1987). Repeatability of locomotor performance in natural populations of the lizard Sceloporus merriami. Evolution, 41(5), 1116-1120.

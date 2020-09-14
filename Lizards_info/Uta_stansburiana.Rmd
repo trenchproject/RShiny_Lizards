@@ -1,0 +1,20 @@
+---
+title: "Uta stansburiana"
+output: html_document
+---
+
+<img src="http://www.reptilesofaz.org/Graphics/Lizards/UTASTA-M.jpg"
+width = 450 
+class="center"
+align="right" />
+
+&emsp;The common side-blotched lizard, *Uta stansburiana*, is distributed from northern Mexico to southeastern Washington in the United States. They are commonly found in desert washes, sand dune areas, sagebrush flats, and boulders (Stebbins, 2003).  
+&emsp;*U. stansburiana* responds to high temperatures in a variety of ways (Davis & Verbeek, 1972). Some shift to the side of the rocks away from the sun to be in the shade. They will then place themselves in a vertical position and extend their legs so that their ventral surfaces are away from the substrate. Others simply seek shelter beneath their rock perch or in an insect or rodent burrow. Lightening their body coloration allows them to reduce heat gain from solar radiation (Davis & Verbeek, 1972). In addition to their high predation rate, this species has a short lifespan and a short time in which to mature. Disruption to their life cycle by any climatic factors is expected to have a serious impact on the population (Davis & Verbeek, 1972).  
+&emsp;One interesting fact about this lizard is that the males of *U. stansburiana* have three different throat colors ― orange, blue or yellow depending on the individual. Since the rarest morph has an advantage over the others, none of the colorations are dominant, and the abundunce of color varies each year (Barreto et al., 2017).  
+<!-- They lay eggs March through August, and the clutch size ranges from 1 to 8 (Stebbins, 2003). -->
+<!-- Their snout-vent length measures up to 6cm. -->
+
+**References**  
+Barreto, W. P., Marquitti, F. M., & de Aguiar, M. A. (2017). A genetic approach to the rock-paper-scissors game. Journal of theoretical biology, 421, 146-152.  
+Davis, J., & Verbeek, N. A. (1972). Habitat preferences and the distribution of Uta stansburiana and Sceloporus occidentalis in coastal California. Copeia, 643-649.  
+Stebbins, R. (2003). A field guide to western reptiles and amphibians (3rd ed., Peterson field guide series). Boston: Houghton Mifflin.

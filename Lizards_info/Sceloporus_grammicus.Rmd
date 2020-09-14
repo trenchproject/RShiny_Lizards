@@ -1,0 +1,21 @@
+---
+title: "Sceloporus grammicus"
+output: html_document
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Sceloporus_grammicus_male.JPG/1200px-Sceloporus_grammicus_male.JPG"
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;*Sceloporus grammicus*, or the mesquite lizard, is a widely distributed lizard species in Mexico and part of the United States that inhabits a variety of ecosystems.  
+&emsp;This species maintains a lower body temperature than most other species of the same genus, including other montane species (Lemos-Espinal & Ballinger, 1995). They occupy open habitats but also make use of rock crevices in the immediate proximity of basking sites for both thermoregulation and protection (Lemos-Espinal & Ballinger, 1995). Their primary strategy for thermoregulation is gaining heat through conduction by flattening their body against warm rock surfaces. Heat gain from radiation is less important since their natural habitat of high mountain system has relatively low air temperature (Díaz de la Vega-Pérez et al., 2019). While their small body size helps them effectively increase their body temperature, it also raises the concern of overheating due to global warming.
+<!-- Pregnant females have lower body temperature than other individuals because of their restricted ability to thermoregulate (Díaz de la Vega-Pérez et al, 2019).  -->
+
+**References**  
+Díaz de la Vega-Pérez, A., Barrios-Montiel, R., Jiménez-Arcos, V., Bautista, A., & Bastiaans, E. (2019). High-mountain altitudinal gradient influences thermal ecology of the Mesquite Lizard (Sceloporus grammicus). Canadian Journal of Zoology, 97(8), 659-668.  
+Lemos-Espinal, J., & Ballinger, R. (1995). Comparative thermal ecology of the high-altitude lizard Sceloporus grammicus on the eastern slope of the Iztaccihuatl Volcano, Puebla, Mexico. Canadian Journal of Zoology, 73(12), 2184-2191.
+<br>
+<br>
+<br>

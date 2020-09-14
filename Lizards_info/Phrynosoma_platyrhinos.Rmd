@@ -1,0 +1,20 @@
+---
+title: "Phrynosoma platyrhinos"
+output: html_document
+---
+
+<img src="http://www.californiaherps.com/lizards/images/ppcalidiarumdtp6092.jpg" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;*Phrynosoma platyrhinos*, or the desert horned lizard, is a species of lizard that prefers an arid or semi-arid environment with access to open ground.  
+&emsp;The variance in body temperature of active *P. platyrhinos* is significantly greater than that of most other lizards occupying similar habitats (Pianka & Parker, 1975). This is reflected in the long activity time of this species. This extended activity time is needed because *P. platyrhinos* is an ant specialist. Ants' exoskeletons are made of chitin — a carbohydrate resistant to degredation — so ant feeders need a large stomach to consume a lot of ants (Pianka & Parker, 1975). Their large stomachs reduce movement, but their foraging time must remain sufficiently long to secure resources. The longer foraging time and shorter thermoregulation inevitably contribute to a more variable body temperature. The increased risk of predation from the slow movement and longer feeding time is compensated for by their cryptic coloration and sharp spines.  
+&emsp;Although thermoregulation is relaxed for this species, when the air temperature exceeds 39°C, lizards move either in shade or under the soil to avoid overheating (Newbold & MacMahon, 2014). Reduced available activity time from climate change can be detrimental. 
+  
+**References**   
+Newbold, T., & MacMahon, J. (2014). Determinants of Habitat Selection by Desert Horned Lizards (Phrynosoma platyrhinos): The Importance of Abiotic Factors Associated with Vegetation Structure. Journal of Herpetology, 48(3), 306-316.  
+Pianka, E. R., & Parker, W. S. (1975). Ecology of horned lizards: a review with special reference to Phrynosoma platyrhinos. Copeia, 141-162.
+
+<!-- *P. platyrhinos* has a strong preference for microhabitats with soil mounds since they are cooler than flat ground due to increased convection and air circulation (Newbold & MacMahon, 2014). Additionally, the mounds warm more quickly during the cooler morning, which is beneficial for the lizards.   -->

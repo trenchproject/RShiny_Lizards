@@ -1,0 +1,23 @@
+---
+title: "Coleonyx brevis"
+output: html_document
+---
+
+<img src="http://www.thehibbitts.net/troy/photo/lizards/c.brevis.tx.brewster.17.1.2131.jpg" 
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;*Coleonyx brevis* is a nocturnal gecko that inhabits xeric environments in the southwestern United States and northern Mexico.  
+&emsp;They typically start their activity immediately after sunset, and it extends until early morning. *C. brevis* is eurythermic, making exposures to variable thermal conditions during this time interval possible. Their mean body temperature at night is lower than their preferred temperature, which represents a compromise for nocturnality. During the daytime, they stay under cover such as rocks warmed up by the sun and alter body positions to maximize the efficiency of digestion.
+
+**Reference**  
+Dial, B. E. (1978). The thermal ecology of two sympatric, nocturnal Coleonyx (Lacertilia: Gekkonidae). Herpetologica, 194-201.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

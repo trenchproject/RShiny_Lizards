@@ -1,0 +1,30 @@
+---
+title: "Sceloporus graciosus"
+output: html_document
+---
+
+<img src="https://calphotos.berkeley.edu/imgs/512x768/0000_0000/0211/0906.jpeg"
+width = 450 
+class="center"
+align="right" />
+
+**Description**  
+&emsp;The sagebrush lizard, *Sceloporus graciosus*, is a common lizard found at mid and high altitudes in the western United States. They tend to occupy open habitats, but to effectively thermoregulate use sagebrush and other desert shrubs as well as rocky outcrops (Cossel, 1997).  
+&emsp;The lizards often spend the night in rodent burrows to avoid the cold. They emerge from the burrows once their body temperatures reach levels sufficient for activity and they are generally able to use behavioral thermoregulation to maintain constant body temperatures while active (Guyer & Linder, 1985). In some areas, lizards may capitalize on climate change. In others, warming temperatures may drive heat and energetic stress by limiting opportunities for thermoregulation, restricting activity times, or driving the lizards to higher elevations.
+<!-- *Sceloporus graciosus* is a common lizard in central to western United States. They are mostly found in sagebrush cover but they also inhabit greasewood and other desert shrubs and sometimes small rocky outcrops as well (Cossel, 1997).   -->
+
+<!-- *S. graciosus* has similar body temperatures throughout the daylight hours (Guyer & Linder, 1985). They spend the night in rodent burrows to avoid the cold. This species does not emerge until body temperatures reach levels sufficient for activity and that this level is maintained throughout the hours (Guyer & Linder, 1985). -->
+
+**References**  
+Cossel, John Jr. (1997). Sceloporus graciosus. Digital Atlas of Idaho https://digitalatlas.cose.isu.edu/bio/reptile/main/repfram.htm Accessed Apr. 14, 2020.  
+Guyer, C., & Linder, A. D. (1985). Thermal ecology and activity patterns of the short-horned lizard (Phrynosoma douglassi) and the sagebrush lizard (Sceloporus graciosus) in southeastern Idaho. The Great Basin Naturalist, 607-614.
+<br>
+<br>
+<br>
+<!-- Their mating season is spring, and eggs are usually laid in June, which will then hatch in August. They stay inactive during the cold months of the year. -->
+
+<!-- Rose -->
+
+<!-- prefers a more open habitat  -->
+
+<!-- Seventy percent of S. graciosus were found under shrubs, while this habitat is 46% of the area. Thus, their results strongly suggest that the lizards were selecting specific habitats rather than occurring in proportion to the available habitat.  -->
