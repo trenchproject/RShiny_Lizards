@@ -30,7 +30,7 @@ shinyUI <-
               
               hr(),
               
-              includeHTML("/srv/shiny-server/myapp/intro.html"),
+              includeHTML("./intro.html"),
               
               hr(),
               
