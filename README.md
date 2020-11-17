@@ -27,7 +27,7 @@ Paste the repository URL and click ```Create Project```.
 
 * Alternatively, go to [this link](https://map.trenchproject.com/RShiny_Lizards/).
 
-## Contributing to PlasticityTradeoff
+## Contributing to RShiny_Lizards
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
 To contribute to Rshiny_Lizards, follow these steps:
 
