@@ -58,11 +58,11 @@ In other words, many organisms that are currently living in their optimal enviro
 
 <h4>Modelling approach and data sources</h4>
 <ul>
-  <li>Lizard range maps were obtained from IUCN (https://www.iucnredlist.org/resources/spatial-data-download). </li>
+  <li>Lizard range maps were obtained from <a href = https://www.iucnredlist.org/resources/spatial-data-download> IUCN </a>. </li>
   <li>Climate and zenith angle data are long-term (1961-1990) monthly averages for 15km grids from Kearney et al. (2014, microclim: Global estimates of hourly microclimate based on long-term monthly climate averages).  We use air temperature 1 cm above the ground assuming a soil substrate, ground temperature at depths of 0 cm under ground assuming a soil substrate, and wind speed 1cm above ground. Shade level of 0% and 100% correspond to "exposed" and "covered".</li>
   <li>Elevation data are from NOAA ETOPO1 Global Relief Model, grid-registered ETOPO1 Ice Surface.</li>
   <li>We estimated lizard optimal temperatures using a biophysical model from Campbell and Norman (2000, Environmental Biophysics)</li>
-  &#8618; <a href url = "https://github.com/trenchproject/TrenchR/blob/master/R/biophysmodel_Sceloporus.R">TrenchR::Tb_lizard</a>
+  &#8618; <a href = "https://github.com/trenchproject/TrenchR/blob/master/R/biophysmodel_Sceloporus.R">TrenchR::Tb_lizard</a>
   <li>The biophysical model was parameterized using lizard mass and size (snout-vent length, SVL) data from the following compilation: Meiri. 2010. "Length–weight allometries in lizards."</li>
   <li>Lizard optimal temperatures and critical thermal maximum were obtained from the following compilation: Bennett et al. 2018. GlobTherm, a global database on thermal tolerances for aquatic and terrestrial organisms. </li>
   <li>We estimate shifts in TSMs following 1.5°C or 2°C warming by adding that magnitude of warming to the monthly air and ground temperature averages. We thus omit potential changes to other environmental variables.</li>
