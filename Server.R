@@ -3,11 +3,36 @@ names(month) <- c("January","February","March","April","May","June","July","Augu
 scenarios <- c("Normal","+1.5 °C","+2 °C")
 hours <- c("12 AM","01 AM","02 AM","03 AM","04 AM","05 AM","06 AM","07 AM","08 AM","09 AM","10 AM","11 AM","12 PM","01 PM","02 PM","03 PM","04 PM","05 PM","06 PM","07 PM","08 PM","09 PM", "10 PM","11 PM")
 
+TPC<- function(T,Topt,CTmin, CTmax){
+  F=T
+  F[]=NA
+  sigma= (Topt-CTmin)/4
+  F[T<=Topt & !is.na(T)]= exp(-((T[T<=Topt & !is.na(T)]-Topt)/(2*sigma))^2) 
+  F[T>Topt & !is.na(T)]= 1- ((T[T>Topt & !is.na(T)]-Topt)/(Topt-CTmax))^2
+  #set negetative to zero
+  F[F<0]<-0
+  
+  return(F)
+}
+
 # Read the csv file
 Lepidosauria <- fread("Lepidosauria.csv")
 
+source("cicerone.R", local = T)
 
 shinyServer <- function(input, output, session) {
+  
+  observeEvent(input$tour1, guide1$init()$start())
+  
+  observeEvent(input$reset1, {
+    reset("page")
+  })
+  
+  observeEvent(input$tour2, guide2$init()$start())
+  
+  observeEvent(input$reset2, {
+    reset("page")
+  })
   
   # Brief background information of selected species
   output$species_info <- renderText({
@@ -38,7 +63,7 @@ shinyServer <- function(input, output, session) {
   
   # MAP tab
   # Read the data file of the selected species to make a map
-  data_by_org <- eventReactive( input$run,{
+  data_by_org <- eventReactive(input$run, {
     org <- input$species
     filename <- paste("Data/",gsub(" ","_",org),"_combined.rds", sep= "")
     df <- readRDS(filename)
@@ -53,7 +78,7 @@ shinyServer <- function(input, output, session) {
   )
 
   # Filter data by the inputs to map the distribution
-  dataInput <- eventReactive( input$run,{
+  dataInput <- eventReactive(input$run, {
     df <- data_by_org() %>% filter(Hour %in% input$hour & Month %in% input$month & Scenario %in% input$scenario)
     
     if ("Thermoregulating" %in% input$shade) {
@@ -127,7 +152,7 @@ shinyServer <- function(input, output, session) {
     if (input$map_onoff) {
     leaflet() %>%
       addProviderTiles(providers$CartoDB.Positron) %>%
-      setView(lng = (max(dataInput()$x) + min(dataInput()$x))/2, lat = (max(dataInput()$y) + min(dataInput()$y))/2, zoom = 3) %>%
+      setView(lng = (max(dataInput()$x) + min(dataInput()$x)) / 2, lat = (max(dataInput()$y) + min(dataInput()$y))/2, zoom = 3) %>%
       addRectangles(lng1 = min(dataInput()$x), lng2 = max(dataInput()$x), lat1 = min(dataInput()$y), lat2 = max(dataInput()$y))
     }
   })
@@ -182,20 +207,21 @@ shinyServer <- function(input, output, session) {
 
   # Density plot
   output$density <- renderPlot({
-    
+
     facet_formula <- as.formula(paste(x_variable(), "~", y_variable()))
     mx <- max(dataInput()$Tsm)
     mn <- min(dataInput()$Tsm)
     p <- ggplot(data = dataInput()) + 
-      geom_density_ridges2(aes(x=Tsm, y=0, fill=Scenario), scale=1, alpha=0.5) +
+      geom_density(aes(x = Tsm, y = ..scaled.., fill = Scenario), alpha = 0.5) +
+      # geom_density_ridges2(aes(x = Tsm, y = 0, fill = Scenario), scale = 1, alpha = 0.5) +
       xlab("Thermal Safety Margin (°C)") + ylab("Frequency") + 
       scale_fill_manual(name = "Scenarios", values = c("blue", "orange", "green"), labels = c("Normal", "+ 1.5°C", "+ 2°C")) +
-      scale_x_continuous(expand = c(0,0)) + scale_y_continuous(expand = c(0,0)) +
-      theme_bw() + facet_grid(facet_formula, scales = "free") + 
+      scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0)) +
+      theme_bw() + facet_grid(facet_formula, scales = "free") +
       theme(strip.text = element_text(size = 12), plot.title = element_text(size = 18), 
             plot.background = element_rect(fill = "#F5F5F5"), panel.background = element_rect(fill = "azure"), 
             legend.position = "right", legend.text = element_text(size = 12), legend.title = element_text(size = 12), 
-            axis.title = element_text(size = 14), axis.text = element_text(size = 12), axis.text.y=element_blank(), axis.ticks.y=element_blank())
+            axis.title = element_text(size = 14), axis.text = element_text(size = 12))#, axis.text.y = element_blank(), axis.ticks.y = element_blank())
     
     # Add colored lines that correspond to the fills on the map
     if (mn < 5) {
@@ -216,7 +242,7 @@ shinyServer <- function(input, output, session) {
   # Text output of the clicked location
   output$info <- renderText({
     validate(
-      need(input$click_plot, "Click on the map to get temperature data")
+      need(input$plot_click, "Click on the map to get temperature data")
     )
     tsm <- round(colMeans(nearPoints(dataInput(), input$plot_click, xvar = "x", yvar = "y")["Tsm"]), digits = 1)
     tmax <- Lepidosauria[Lepidosauria$Binomial == input$species, "Tmax"]

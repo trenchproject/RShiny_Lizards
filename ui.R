@@ -1,5 +1,5 @@
 # Load necessary packages
-pkgs <- c('shiny', 'ggplot2','ggridges','magrittr','plotly','shinyBS', 'data.table', 'leaflet', 'shinyjs', 'shinysky', 'shinythemes', 'shinyWidgets', 'maps', 'shinycssloaders')
+pkgs <- c('shiny', 'ggplot2','ggridges','magrittr','plotly','shinyBS', 'data.table', 'leaflet', 'shinyjs', 'shinysky', 'shinythemes', 'shinyWidgets', 'maps', 'shinycssloaders', 'cicerone')
 lapply(pkgs, library, character.only = TRUE)
 
 month <- c(1:12)
@@ -18,8 +18,10 @@ org_done <- c("Anolis carolinensis", "Anolis oculatus", "Anolis semilineatus", "
 variables <- c("Month", "Hour", "Scenario", "Shade")
 
 shinyUI <- 
-   fluidPage (theme = shinytheme("united"),
+   fluidPage (id = "page",
+              theme = shinytheme("united"),
               setBackgroundColor(color = "#F5F5F5"),
+              use_cicerone(),
               useShinyjs(),
               
               title = "Climate Change and Lizards",
@@ -37,12 +39,19 @@ shinyUI <-
               strong("Select a species and explore their distribution, current status and the risk they may face from increasing temperature."),
               
               fluidRow(
-                column(6, selectInput("species", label = "", choices = org_done))
+                column(6, 
+                       div(
+                         id = "species-wrapper",
+                         pickerInput("species", label = "", choices = org_done,
+                                     options = list(style = "btn-primary"))
+                       )
+                )
               ),
               
               htmlOutput("species_info") %>% withSpinner(type = 7),
-              
-              tabsetPanel(id = "tabset", type = "tabs",
+              div(
+                id = "viz-wrapper",
+                tabsetPanel(id = "tabset", type = "tabs",
                           
                           tabPanel("Distribution Map",
                                    sidebarLayout(
@@ -50,37 +59,69 @@ shinyUI <-
                                        h3(icon("map-marked-alt"), " Distribution map"),
                                        p("Set the variables and hit \"Run\" to take a look at the thermal safety margins of the selected species within their distribution."),
                                        p("Click on the map to get more accurate data on TSM of that location."),
-                                                                                      
-                                       hr(),
-                                       fluidRow(
-                                         column(6,radioButtons("rows", label = "Horizontal facets", choices = variables)),
-                                         column(6,radioButtons("columns", label = "Vertical facets", choices = variables, selected = "Hour"))
+                                       actionBttn(
+                                         inputId = "reset1",
+                                         label = "Reset", 
+                                         style = "material-flat",
+                                         color = "danger",
+                                         size = "xs"
+                                       ),
+                                       bsTooltip("reset1", "If you have already changed the variables, reset them to default here before starting the tour."),
+                                       
+                                       actionBttn(
+                                         inputId = "tour1",
+                                         label = "Take a tour!", 
+                                         style = "material-flat",
+                                         color = "success",
+                                         size = "xs"
                                        ),
                                        
-                                       select2Input("month", label = "Month", choices = names(month), multiple = TRUE, selected = "January"),
-                                       select2Input("hour", label = "Hour", choices = hours, multiple = TRUE, selected = "01 PM"),
+                                       hr(),
+                                       fluidRow(id = "facet-wrapper",
+                                         column(6, radioButtons("rows", label = "Horizontal facets", choices = variables)),
+                                         column(6, radioButtons("columns", label = "Vertical facets", choices = variables, selected = "Hour"))
+                                       ),
                                        
-                                       fluidRow(
+                                       fluidRow(id = "time-wrapper",
+                                         column(6, pickerInput("month", label = "Month", choices = names(month), multiple = TRUE, selected = "January",
+                                                               options = list(style = "btn-success", `actions-box` = TRUE))),
+                                         column(6, pickerInput("hour", label = "Hour", choices = hours, multiple = TRUE, selected = "01 PM",
+                                                               options = list(style = "btn-success", `actions-box` = TRUE)))
+                                       ),
+                                       fluidRow(id = "var-wrapper",
                                          column(6, checkboxGroupInput("scenario", label = "Scenario", choices = scenarios, selected = "Normal")),
                                          column(6, checkboxGroupInput("shade", label = "Shade", choices = c("Exposed", "Covered", "Thermoregulating"), selected = "Exposed"))
                                        ),  
                                        
                                        fluidRow(
-                                         column(8, materialSwitch("map_onoff", "World map", status = "danger")),
+                                         column(8, 
+                                                div(
+                                                  id = "map-switch",
+                                                  materialSwitch("map_onoff", "World map", status = "danger"))
+                                         ),
                                          column(2, actionButton("run", "Run", styleclass = "primary"))
                                        ),
                                      ),
                                      
                                      mainPanel(
                                        br(), 
-                                       switchInput(inputId = "scale", label = "Scale", onLabel = "Discrete", offLabel = "Continuous", inline = TRUE, value = TRUE, size = "small"),
+                                       div(
+                                         id = "scale-wrapper",
+                                       
+                                         switchInput(inputId = "scale", label = "Scale", onLabel = "Discrete", offLabel = "Continuous", inline = TRUE, value = TRUE, size = "small"),
+                                       ),
                                        br(),
-                                       fluidRow(column(12, plotOutput("plot1", click = "plot_click") %>% withSpinner(type = 7))),
-                                       br(), 
+                                       fluidRow(id = "map-wrapper",
+                                         column(12, plotOutput("plot1", click = "plot_click") %>% withSpinner(type = 7))
+                                       ),
+                                       br(),
                                        strong("Operative temperature and TSM of the clicked location"),
                                        verbatimTextOutput("info"),
-                                       strong("Distribution of TSM"),
-                                       fluidRow(column(12, plotOutput("density") %>% withSpinner(type = 7))),
+                                       div(
+                                         id = "density-wrapper",
+                                         strong("Distribution of TSM"),
+                                         fluidRow(column(12, plotOutput("density") %>% withSpinner(type = 7)))
+                                       ),
                                        br(),
                                        column(8, offset = 2, align="center", leafletOutput("mymap")),
                                        br(),
@@ -89,19 +130,44 @@ shinyUI <-
                           ),
                           
                           
-                          tabPanel("Plot", 
+                          tabPanel("Hourly plot", 
                                    sidebarLayout(
                                      sidebarPanel(
                                        h3(icon("chart-bar"), " Plot"),
                                        p("Explore the change in thermal safety margins of the selected species throughout the day in different months."),
                                        p("The shapes on the plot represent the frequency of TSM within the species."),
+                                       actionBttn(
+                                         inputId = "reset2",
+                                         label = "Reset", 
+                                         style = "material-flat",
+                                         color = "danger",
+                                         size = "xs"
+                                       ),
+                                       bsTooltip("reset2", "If you have already changed the variables, reset them to default here before starting the tour."),
                                        
-                                       radioButtons("facet", label = "Facet", choices = c("Shade", "Scenario"), inline = TRUE),
+                                       actionBttn(
+                                         inputId = "tour2",
+                                         label = "Take a tour!", 
+                                         style = "material-flat",
+                                         color = "success",
+                                         size = "xs"
+                                       ),
+                                       hr(),
                                        
-                                       selectInput("month_2", label = "Month", choices = month)
+                                       div(
+                                         id = "plotvar-wrapper",
+                                       
+                                         radioButtons("facet", label = "Facet", choices = c("Shade", "Scenario"), inline = TRUE),
+                                         
+                                         fluidRow(
+                                           column(6, pickerInput("month_2", label = "Month", choices = month, selected = "January",
+                                                                 options = list(style = "btn-success", `actions-box` = TRUE))
+                                           )
+                                         )
+                                       )
                                      ),
                                      
-                                     mainPanel(
+                                     mainPanel(id = "plot2-wrapper",
                                        column(12, align = "center", plotOutput("plot2", width = "100%") %>% withSpinner(type = 7))
                                      )
                                    )
@@ -157,6 +223,7 @@ shinyUI <-
                           #            )
                           #          )
                           # )
+                )
               ),
               
               bsTooltip("shade", "\"Thermoregulating\" assumes lizards actively moving between shade and sun to approach their body temperature to Topt"),
