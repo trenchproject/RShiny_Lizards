@@ -6,10 +6,10 @@ Rshiny_Lizards is an interactive shiny app that allows any user to visualize the
 ## Prerequisites for opening in Rstudio
 Git and Rstudio ([Instructions](https://resources.github.com/whitepapers/github-and-rstudio/))  
 Installation of the following R packages:
-shiny, ggplot2, ggridges, magrittr, plotly, shinyBS, data.table, leaflet, shinyjs, shinysky, shinythemes, shinyWidgets, maps, shinycssloaders
+shiny, ggplot2, ggridges, magrittr, plotly, shinyBS, data.table, leaflet, shinyjs, shinysky, shinythemes, shinyWidgets, maps, shinycssloaders, cicerone
 
 ```
-pkgs <- c('shiny', 'ggplot2','ggridges','magrittr','plotly','shinyBS', 'data.table', 'leaflet', 'shinyjs', 'shinythemes', 'shinyWidgets', 'maps', 'shinycssloaders')
+pkgs <- c('shiny', 'ggplot2','ggridges','magrittr','plotly','shinyBS', 'data.table', 'leaflet', 'shinyjs', 'shinythemes', 'shinyWidgets', 'maps', 'shinycssloaders', 'cicerone')
 lapply(pkgs, FUN = function(x) {
     if (!require(x, character.only = TRUE)) {
       install.packages(x, dependencies = TRUE)
